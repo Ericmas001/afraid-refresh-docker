@@ -12,7 +12,6 @@ RUN /usr/bin/crontab /crontab.txt
 
 RUN touch /var/log/cron.log
 
-ENV NAME=PROVIDE_ME
-ENV KEY=PROVIDE_ME
+ENV AFRAID_API_KEY=PROVIDE_ME
 
 CMD ["/usr/sbin/crond", "-f"]
